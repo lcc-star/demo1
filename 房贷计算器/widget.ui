@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1305</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>房贷计算器</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QWidget" name="widget_26" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>100</horstretch>
+          <verstretch>100</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <widget class="QWidget" name="widget_27" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_24">
+            <item>
+             <spacer name="horizontalSpacer_76">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_28">
+              <property name="text">
+               <string>贷款类别：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_77">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_14">
+              <property name="maximumSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="currentText">
+               <string>商业贷款</string>
+              </property>
+              <property name="modelColumn">
+               <number>0</number>
+              </property>
+              <item>
+               <property name="text">
+                <string>商业贷款</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>公积金贷款</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>组合型贷款</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_78">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_28" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_25">
+            <item>
+             <spacer name="horizontalSpacer_79">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_29">
+              <property name="text">
+               <string>计算方式：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_80">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_15">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="currentText">
+               <string>根据面积、单价计算</string>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>100</width>
+                <height>30</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>根据面积、单价计算</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>根据贷款总额计算</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_81">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_29" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <spacer name="horizontalSpacer_82">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_30">
+              <property name="text">
+               <string>房屋单价：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_83">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_8">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="maxLength">
+               <number>32769</number>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>请输入房屋单价</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_31">
+              <property name="text">
+               <string>元/平米</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_84">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_34" native="true">
+           <property name="acceptDrops">
+            <bool>false</bool>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <item>
+             <spacer name="horizontalSpacer_99">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_36">
+              <property name="text">
+               <string>房屋面积：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_100">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_10">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="mouseTracking">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string/>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string>请输入房屋面积</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_54">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_37">
+              <property name="text">
+               <string>平方米</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_101">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>225</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="text">
+               <string>按揭成数：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_1">
+              <property name="toolTipDuration">
+               <number>-1</number>
+              </property>
+              <property name="currentText">
+               <string>8成</string>
+              </property>
+              <item>
+               <property name="text">
+                <string>8成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7.5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6.5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5.5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4.5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3.5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2.5成</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2成</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_3">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_30" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_27">
+            <item>
+             <spacer name="horizontalSpacer_85">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_32">
+              <property name="text">
+               <string>按揭年数：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_86">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_16">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>200</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="iconSize">
+               <size>
+                <width>300</width>
+                <height>30</height>
+               </size>
+              </property>
+              <item>
+               <property name="text">
+                <string>25年（300期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>24年（288期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>23年（276期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>22年（264期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>21年（252期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>20年（240期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>19年（228期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>18年（216期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>17年（204期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>16年（192期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年（180期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>14年（168期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>13年（156期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年（144期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>11年（132期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>10年（120期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>9年（108期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>8年（96期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>7年（84期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>6年（72期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>5年（60期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>4年（48期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>3年（36期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>2年（24期）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>1年（12期）</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_87">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_31" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_28">
+            <item>
+             <spacer name="horizontalSpacer_88">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_33">
+              <property name="text">
+               <string>贷款利率：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_89">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox_17">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <item>
+               <property name="text">
+                <string>20年3月20日贷款市场报价利率（LPR）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>19年9月20日贷款市场报价利率（LPR）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年10月24日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年10月24日利率上限（1.05倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年10月24日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年10月24日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年10月24日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年8月26日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年8月26日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年8月26日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年8月26日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年6月28日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年6月28日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年6月28日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年6月28日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年5月11日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年5月11日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年5月11日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年5月11日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年3月1日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年3月1日利率上限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年3月1日利率上限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>15年3月1日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>14年11月22日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>14年11月22日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>14年11月22日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>14年11月22日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年7月6日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年7月6日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年7月6日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年7月6日基准利率</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年6月8日利率上限（1.1倍）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年6月8日利率下限（85折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年6月8日利率下限（7折）</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>12年6月8日基准利率</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_90">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lineEdit_9">
+              <property name="acceptDrops">
+               <bool>true</bool>
+              </property>
+              <property name="text">
+               <string>4.75</string>
+              </property>
+              <property name="frame">
+               <bool>false</bool>
+              </property>
+              <property name="placeholderText">
+               <string/>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_34">
+              <property name="text">
+               <string>%</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_91">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_32" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_29">
+            <item>
+             <spacer name="horizontalSpacer_92">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_35">
+              <property name="text">
+               <string>还款方式：</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_93">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>100</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_7">
+              <property name="text">
+               <string>等额本息</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_94">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QRadioButton" name="radioButton_8">
+              <property name="text">
+               <string>等额本金</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_95">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_33" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_30">
+            <item>
+             <spacer name="horizontalSpacer_96">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>289</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_7">
+              <property name="text">
+               <string>开始计算</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_97">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_8">
+              <property name="text">
+               <string>清空重填</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_98">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>40</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
